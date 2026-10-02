@@ -1,13 +1,45 @@
 import './Header.css'
+import { NavLink, Link } from 'react-router-dom'
 function Header(){
     return(
         <header className='header'>
-            <h2 className='header__title'>ReactAcademy</h2>
-            <nav className='.header__navegation'>
+            <Link to="/" className='header__logo'>
+                <h2 className='header__title'>ReactAcademy</h2>
+            </Link>
+            <nav className='header__navegation'>
                 <ul className='navegation__items'>
-                    <li><a className='navegation__item' href="#hero">Inicio</a></li>
-                    <li><a className='navegation__item' href="#courses">Cursos</a></li>
-                    <li><a className='navegation__item' href="#footer">Nosotros</a></li>
+                    <li>
+                        <NavLink 
+                        to="/" 
+                        className={({ isActive }) => `navigation__item ${isActive ? 'navigation__item--active' : ''}`}
+                        >
+                        Inicio
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink 
+                        to="/cursos" 
+                        className={({ isActive }) => `navigation__item ${isActive ? 'navigation__item--active' : ''}`}
+                        >
+                        Cursos
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink 
+                        to="/nosotros" 
+                        className={({ isActive }) => `navigation__item ${isActive ? 'navigation__item--active' : ''}`}
+                        >
+                        Nosotros
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink 
+                        to="/login" 
+                        className={({ isActive }) => `navigation__item ${isActive ? 'navigation__item--active' : ''}`}
+                        >
+                        Login
+                        </NavLink>
+                    </li>
                 </ul>
             </nav>
         </header>

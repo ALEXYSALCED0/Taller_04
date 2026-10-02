@@ -1,18 +1,24 @@
-import Header from "./components/Header"
-import HeroSection from "./components/HeroSection"
-import CoursesSection from "./components/CoursesSection"
-import RegistrationSection from './components/RegistrationSection'
-import Footer from './components/Footer'
+import { Routes, Route } from 'react-router-dom'
+import Header from './components/Header'
+
+import HomeView from './views/HomeView'
+import CoursesView from './views/CoursesView'
+import AboutView from './views/AboutView'
+import LoginView from './views/LoginView'
+import NotFoundView from './views/NotFoundView'
+
 function App() {
   return (
-  <>
-    <Header> </Header>
-    <HeroSection> </HeroSection>
-    <CoursesSection></CoursesSection>
-    <RegistrationSection> </RegistrationSection>
-    <Footer></Footer>
-
-  </>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomeView />} />
+        <Route path="/cursos" element={<CoursesView />} />
+        <Route path="/nosotros" element={<AboutView />} />
+        <Route path="/login" element={<LoginView />} />
+        <Route path="*" element={<NotFoundView />} />
+      </Routes>
+    </>
   )
 }
 

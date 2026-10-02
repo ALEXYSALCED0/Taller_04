@@ -34,12 +34,7 @@ function CoursesSection(){
             </div>
             <div className='coursesSection__cards'>
             {courses.map(c=>(
-                <Card>
-                    <h3 className='coursesSection__icons'>{c.emoji}</h3>
-                    <h3>{c.title}</h3>
-                    <p className='coursesSection__text'>{c.description}</p>
-                    <Button variant='primary'>{c.btnText}</Button>
-                </Card>
+                <Card emoji={c.emoji} title={c.title} description={c.description} btnText={c.btnText}/>
             )
             )}
             </div>
