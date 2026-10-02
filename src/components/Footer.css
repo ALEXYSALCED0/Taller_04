@@ -1,0 +1,12 @@
+.footer__accent{
+    color: #c53c56;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    background-color: #111111;
+}
+.footer__text{
+    color: #ccccc9;
+}

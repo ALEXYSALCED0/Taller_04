@@ -1,0 +1,26 @@
+.coursesSection{
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+.coursesSection__cards{
+    display: flex;
+    gap: 15px;
+}
+.coursesSection__text{
+    color: #7e7e7e;
+    text-align:left;
+}
+.coursesSection__icons{
+    font-size: 2.5rem;
+}
+.coursesSection__description{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}

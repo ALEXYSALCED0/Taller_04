@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1a1a2e;
+    padding: 10px;
+}
+.header__title{
+    color: #c53c56;
+}
+.header__navegation{
+    display: flex;
+}
+.navegation__items{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+
+}
+.navegation__item{
+    text-decoration: none;
+    color: #ccccc9;
+    transition: all 200ms ease;
+
+}
+.navegation__item:hover{
+    color: #b5b5b2;
+}

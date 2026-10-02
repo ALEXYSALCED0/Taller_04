@@ -1,0 +1,32 @@
+.button{
+    border: none;
+    border-radius: 30px;
+    background-color: #c53c56;
+    color: #fefefe;
+    transition: all 200ms ease;
+}
+.button:hover{
+    background-color: #9f3044;
+    transform: scale(1.05);
+}
+
+.button--big{
+    padding: 10px 20px;
+    font-weight: 600;
+}
+.button--primary{
+    padding: 8px;
+    margin-right: 80px;
+    font-weight: 500;
+}
+.button--round{
+    
+    width: 40px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    font-size: 2rem;
+    font-weight: 900;
+    border-radius: 50%;
+}

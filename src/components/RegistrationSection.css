@@ -1,0 +1,30 @@
+.registrationSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a2e;
+    height: 50vh;
+    gap: 30px;
+}
+.registrationSection__title{
+    color: #fafafa;
+}
+.registrationSection__card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 18vh;
+    width: 20vw;
+    border-radius: 20px;
+    background-color: #16213e;
+}
+.registrationSection__counter{
+    color: #c53c56;
+    font-weight: 900;
+    font-size: 3rem;
+}
+.registrationSection__description{
+    color: #ccccc9;
+    text-align:left;
+}
